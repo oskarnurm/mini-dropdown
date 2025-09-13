@@ -1,6 +1,6 @@
 # mini-dropdown
 
-A tiny dropdown module
+Mini dropdown with vanilla js and css
 
 ## Installation
 
