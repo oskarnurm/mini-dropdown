@@ -1,0 +1,35 @@
+{
+  "name": "mini-dropdown",
+  "version": "1.0.0",
+  "description": "Mini dropdown with vanilla js and css",
+  "keywords": [
+    "dropdown",
+    "vanilla"
+  ],
+  "homepage": "https://github.com/oskarnurm/mini-dropdown#readme",
+  "bugs": {
+    "url": "https://github.com/oskarnurm/mini-dropdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oskarnurm/mini-dropdown.git"
+  },
+  "license": "MIT",
+  "author": "Karl Oskar Joosep Nurm",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp src/* dist"
+  }
+}
