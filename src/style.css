@@ -1,0 +1,54 @@
+:root {
+  --dd-hg: #fff;
+  --dd-fg: #111;
+  --dd-hover: #eee;
+  --dd-radius: 8px;
+  --dd-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --dd-padding: 16px;
+  --dd-padding-y: 8px;
+  --dd-padding-x: 10px;
+  --dd-item-gap: 4px;
+  --dd-font: system-ui, sans-serif;
+}
+
+.dropdown {
+  font-family: var(--dd-font);
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: var(--dd-padding);
+  background: var(--bg);
+  color: var(--dd-fg);
+  box-shadow: var(--dd-shadow);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+  background: var(--dd-hover);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--bg);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: var(--dd-fg);
+  padding: var(--dd-padding-y) var(--dd-padding-x);
+}
+
+.dropdown-content a:hover {
+  background: var(--dd-hover);
+}
+
+.show {
+  display: block;
+}
